@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    padding:20px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.top-buttons{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+#search{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+.input-section{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr auto;
+    gap:10px;
+}
+
+.input-section input,
+.input-section select{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.addBtn{
+    background:#4CAF50;
+    color:white;
+}
+
+.darkBtn{
+    background:#222;
+    color:white;
+}
+
+.savedBtn{
+    background:#2196f3;
+    color:white;
+}
+
+.progressBox{
+    height:20px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:20px;
+}
+
+.progress{
+    height:100%;
+    width:0;
+    background:green;
+    transition:.4s;
+}
+
+#stats{
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.task{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f4f4f4;
+    margin-top:10px;
+    padding:15px;
+    border-radius:10px;
+}
+
+.high{
+    border-left:6px solid red;
+}
+
+.medium{
+    border-left:6px solid orange;
+}
+
+.low{
+    border-left:6px solid green;
+}
+
+.completed{
+    text-decoration:line-through;
+    opacity:.6;
+}
+
+.actions button{
+    margin-left:5px;
+}
+
+.hidden{
+    display:none;
+}
+
+.dark{
+    background:#0f172a;
+}
+
+.dark .container{
+    background:#1e293b;
+    color:white;
+}
+
+.dark .task{
+    background:#334155;
+}
+
+@media(max-width:768px){
+
+.input-section{
+    grid-template-columns:1fr;
+}
+
+.top-buttons{
+    flex-direction:column;
+}
+}
